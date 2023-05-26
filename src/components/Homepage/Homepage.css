@@ -1,0 +1,14 @@
+.home-container {
+    min-height: 100vh;
+    margin: 100px ;
+}
+
+.home-container a {
+    padding-right: 50px;
+    text-decoration: none;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+}
