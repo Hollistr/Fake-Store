@@ -4,8 +4,8 @@ import './Header.css'
 function Header() {
   return (
     <div className="header-container">
-        <p>Fake Store</p>
-        <p>Cart logo</p>
+        <a href='/'>Fake Store</a>
+        <a href='/checkout'>Cart logo</a>
     </div>
   )
 }

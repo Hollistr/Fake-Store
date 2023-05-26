@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Homepage.css'
 import axios from 'axios'
 import ProductCard from '../ProductCard/ProductCard'
+import Catagory from '../Catagory/Catagory'
 
 function Homepage() {
     // Create state for products
@@ -28,12 +29,8 @@ function Homepage() {
 
   return (
     <div className='home-container'>
-      <div className='catagory-container'>
-        <a href='#'>All</a> 
-        <a href='#'>Electronics</a>
-        <a href='#'>Jewelry</a>
-        <a href='#'>Men's Clothing</a>
-        <a href='#'>Women's Clothing</a>
+      <div>
+        <Catagory />
       </div>
       <div className='products-container'>
           {
