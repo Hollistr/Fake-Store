@@ -8,6 +8,7 @@ function ProductCard({product}) {
         <p>{product?.title}</p>
         <p>{product?.category}</p>
         <p>{product?.price}</p>
+        <a href={`/details/${product?.id}`}>See Details</a>
     </div>
   )
 }
