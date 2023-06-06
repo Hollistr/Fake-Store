@@ -4,13 +4,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    background-color: cornflowerblue;
-    color: white;
+    background-color: #3a4895;
+    color: #fcfcfc;
 }
 
-.contact-btn {
+.footer-container a {
     cursor: pointer;
     background-color: transparent;
-    color: white;
-    border: none;
+    color: #fcfcfc;
+    text-decoration: none;
 }

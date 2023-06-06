@@ -33,9 +33,9 @@ function ProductDetails() {
     <div className='product-container'>
       <img src={product.image} />
       <div className='container-info'>
-        <p>{product.title}</p>
-        <p>{product.price}</p>
-        <p>Description</p>
+        <h2>{product.title}</h2>
+        <h2>Price: {product.price}</h2>
+        <h3>Description</h3>
         <p>{product.description}</p>
         <a href='/checkout'>Add to Cart</a>
       </div>

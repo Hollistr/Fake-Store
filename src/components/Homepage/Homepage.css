@@ -12,3 +12,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.catagory-container {
+    font-size: 20px;
+    color: #5264C3;
+    padding-bottom: 20px;
+}

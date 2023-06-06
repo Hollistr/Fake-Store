@@ -4,6 +4,16 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    border-bottom: 3px solid cornflowerblue;
-    color: cornflowerblue
+}
+
+.header-container a {
+    font-weight: bolder;
+    font-size: 24px;
+    color: #3A4895;
+    text-decoration: none;
+}
+
+.cart-icon {
+    font-size: 3em;
+    color: #3A4895;
 }

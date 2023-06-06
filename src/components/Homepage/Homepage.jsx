@@ -29,7 +29,7 @@ function Homepage() {
 
   return (
     <div className='home-container'>
-      <div>
+      <div className='catagory-container'>
         <Catagory />
       </div>
       <div className='products-container'>

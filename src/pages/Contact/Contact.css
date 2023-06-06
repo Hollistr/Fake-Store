@@ -1,0 +1,36 @@
+.contact-container {
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 100px 300px;
+}
+
+.contact-container h1 {
+    padding: 60px 0;
+    font-weight: bolder;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input {
+    background-color: #b4b4b4;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.submit-btn {
+    width: 160px;
+    height: 40px;
+    background-color: #5264C3;
+    color: white;
+    border: none;
+    align-self: center;
+    margin-top: 10px;
+}
