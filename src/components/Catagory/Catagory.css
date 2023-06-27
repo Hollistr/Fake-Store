@@ -1,0 +1,9 @@
+.category-container {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.category-container p {
+    padding-right: 20px;
+}

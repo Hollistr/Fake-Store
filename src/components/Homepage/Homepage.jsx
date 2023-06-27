@@ -7,6 +7,7 @@ import Catagory from '../Catagory/Catagory'
 function Homepage() {
     // Create state for products
     const [products, setProducts] = useState( [] )
+    
 
     // https://fakestoreapi.com/products
     
@@ -30,7 +31,7 @@ function Homepage() {
   return (
     <div className='home-container'>
       <div className='catagory-container'>
-        <Catagory />
+        <Catagory setProducts={setProducts}/>
       </div>
       <div className='products-container'>
           {
