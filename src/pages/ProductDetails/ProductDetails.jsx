@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import {useParams} from 'react-router-dom'
 import './ProductDetails.css'
 import axios from 'axios'
+import { ThemeContext } from '../../Context/ThemeContext'
 
 function ProductDetails() {
+    // change to use global state
+    // NOTE { } not [ ]
+    const {darkMode, setDarkMode} = useContext(ThemeContext)
+
     // This page shows the details for a specific product
     // How do I know which one?
     // the id is in the url
@@ -30,7 +35,7 @@ function ProductDetails() {
     )
 
   return (
-    <div className='product-container'>
+    <div className={darkMode?'product-container product-container-dark':'product-container'}>
       <img src={product.image} />
       <div className='container-info'>
         <h2>{product.title}</h2>

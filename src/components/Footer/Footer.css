@@ -14,3 +14,23 @@
     color: #fcfcfc;
     text-decoration: none;
 }
+
+.footer-dark {
+    background-color: black;
+    border-top: orangered
+}
+
+.theme-btn {
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--light-theme-btn);
+    color: var(--white);
+    margin-left: 20px;
+}
+
+.theme-btn-dark {
+    background-color: orangered;
+}

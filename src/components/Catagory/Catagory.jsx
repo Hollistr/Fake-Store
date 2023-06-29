@@ -14,12 +14,12 @@ function Catagory({setProducts}) {
   // create state to hold catagorise
   const [categories, setCategories] = useState ([])
   
-
+  
   const searchCategory = (category) => {
     //change the catagory to the parameter
     console.log(category)
     //make api call to retrieve specific category data
-    axios.get(`https://fakestoreapi.com/products/category/jewelery`)
+    axios.get(`https://fakestoreapi.com/products/category/${categories}`)
     .then(res => {
         console.log(res)
         setCategories(res.jewelery)
@@ -55,7 +55,7 @@ function Catagory({setProducts}) {
     }, [] //empty array means run one time when page loads
   
   )
-
+  console.log(categories)
   return (
     <div className='category-container'>
       <p onClick={(item) => allCategory(item)}>All</p>

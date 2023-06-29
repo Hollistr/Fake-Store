@@ -1,11 +1,15 @@
 .product-container{
     background-color: #fcfcfc;
-    margin: 80px 300px;
+    padding: 80px 300px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 40px;
     min-height: 100vh;
+}
+
+.product-container-dark {
+    background-color: black;
+    color: white;
 }
 
 .product-container img {

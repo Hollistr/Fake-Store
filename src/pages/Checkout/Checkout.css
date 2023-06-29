@@ -1,0 +1,8 @@
+.checkout-container {
+    min-height: 100vh;
+    padding: 100px ;
+}
+
+.checkout-container-dark {
+    background-color: black;
+}

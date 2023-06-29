@@ -35,6 +35,17 @@
 .product-card a {
     color: #3a4895;
 }
+
+.heart-icon{
+    color:var(--primary-bg);
+    font-size:20px;
+    cursor:pointer;
+    margin-left: 20px;
+    /* position: absolute; */
+    bottom: 15px;
+    left: 0px;
+  }
+
 /* .product-card p {
     margin-top: 10px;
     border: none;

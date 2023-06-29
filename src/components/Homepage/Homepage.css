@@ -1,6 +1,11 @@
 .home-container {
     min-height: 100vh;
-    margin: 100px ;
+    padding: 100px ;
+}
+
+.home-dark {
+    background-color: black;
+    color: orangered;
 }
 
 .home-container a {

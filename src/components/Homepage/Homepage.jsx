@@ -1,10 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import './Homepage.css'
 import axios from 'axios'
 import ProductCard from '../ProductCard/ProductCard'
 import Catagory from '../Catagory/Catagory'
+import { ThemeContext } from '../../Context/ThemeContext'
 
 function Homepage() {
+    // change to use global state
+    // NOTE { } not [ ]
+    const {darkMode, setDarkMode} = useContext(ThemeContext)
+
     // Create state for products
     const [products, setProducts] = useState( [] )
     
@@ -29,7 +34,7 @@ function Homepage() {
     )
 
   return (
-    <div className='home-container'>
+    <div className={darkMode?'home-container home-dark':'home-container'}>
       <div className='catagory-container'>
         <Catagory setProducts={setProducts}/>
       </div>

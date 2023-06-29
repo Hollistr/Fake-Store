@@ -1,8 +1,19 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import Modal from 'react-modal'
 import './Checkout.css'
+import { CartContext } from '../../Context/CartContext'
+import ProductCard from '../../components/ProductCard/ProductCard'
+import { ThemeContext } from '../../Context/ThemeContext'
 
 function Checkout() {
+  // change to use global state
+    // NOTE { } not [ ]
+    const {darkMode, setDarkMode} = useContext(ThemeContext)
+
+  // change to use global state
+  // NOTE { } not [ ]
+  const {cart} = useContext(CartContext)
+
   // Create state to control modal
   const [isOpen, setIsOpen] = React.useState(false)
 
@@ -15,14 +26,25 @@ function Checkout() {
       marginRight: '-50%',
       transform: 'translate(-50%, -50%)',
     },
+
+
   };
 
   // Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
 Modal.setAppElement(document.getElementById('root'));
 
   return (
-    <div className='checkout-container'>
-        <p>Checkout Container Here</p>
+    <div className={darkMode?'checkout-container checkout-container-dark':'checkout-container'}>
+        <div className='cart-products'>
+          {
+            cart.length > 0?
+            cart.map(item => <ProductCard 
+              key={item.id}
+              product={item} />)
+              :
+              <p>No items in cart</p>
+          }
+        </div>
         <button className='checkout-btn'
                 onClick={() => setIsOpen(true)}>Checkout</button>
         <Modal
